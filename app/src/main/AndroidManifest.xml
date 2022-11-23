@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthtracker">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_tracker"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_tracker_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthTracker"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".activity_kcal" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB2gRnxmm7OCSA-33QW5RKtpN_Ch4bUcJI" />
+
+        <activity android:name=".activity_question" />
+        <activity android:name=".activity_bmi" />
+        <activity android:name=".activity_diary" />
+        <activity android:name=".activity_goal" />
+        <activity
+            android:name=".activity_youtube"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout" />
+        <activity android:name=".activity_chart" />
+        <activity android:name=".SubActivity" />
+
+        <activity android:name=".activity_splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

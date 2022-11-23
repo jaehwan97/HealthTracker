@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/edittext_dialog_id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="날짜를 입력하세요."
+            style="@android:style/Widget.Spinner"
+            android:onClick="openDatePicker"
+            android:inputType="text"
+    />
+
+    <EditText
+            android:id="@+id/edittext_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="아침에 먹은 것을 입력하세요."
+            android:inputType="text"
+
+    />
+
+    <EditText
+            android:id="@+id/edittext_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="점심에 먹은 것을 입력하세요."
+            android:inputType="text"
+    />
+    <EditText
+            android:id="@+id/edittext_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="저녁에 먹은 것을 입력하세요."
+            android:inputType="text"
+    />
+    <EditText
+            android:id="@+id/edittext_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="간식으로 먹은 것을 입력하세요."
+            android:inputType="text"
+    />
+
+    <Button
+            android:id="@+id/button_dialog_submitt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="수정"
+            android:textSize="20sp"
+            android:layout_gravity="center" />
+
+</LinearLayout>

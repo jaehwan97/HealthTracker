@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/re_list"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:src="@drawable/menu"
+                android:paddingTop="5dp"
+                android:background="@color/p_vio_1"
+                android:scaleType="center"></ImageButton>
+
+            <TextView
+                android:id="@+id/polkmn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:text="  음식 검색"
+                android:textColor="#ffffff"
+                android:background="@color/p_vio_1"
+                android:textSize="27sp"></TextView>
+        </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <SearchView android:id="@+id/le_search"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:queryHint="Search..."
+            android:iconifiedByDefault="false"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/search_background"
+            />
+        <TextView
+            android:id="@+id/le_search_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text=" 음식을 검색하세요\n \n 검색 결과 화면정보\n\n                 ▼\n\n 제품 이름:\n\n 1회 제공량(g):\n 열량(kcal):\n 탄수화물(g):\n 단백질(g):\n 지방(g):\n 당류(g):\n 나트륨(mg):\n 콜레스트롤(mg):\n 포화지방산(g):\n 가공업체:\n "
+            android:textColor="@color/purple_700"
+            android:background="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="27sp"></TextView>
+    </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <include
+        layout="@layout/activity_dra"></include>
+</androidx.drawerlayout.widget.DrawerLayout>

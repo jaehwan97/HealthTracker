@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/re_list"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:src="@drawable/menu"
+                android:paddingTop="5dp"
+                android:background="@color/p_vio_1"
+                android:scaleType="center"></ImageButton>
+
+            <TextView
+                android:id="@+id/polkmn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:text="  추천 운동 방법 "
+                android:textColor="#ffffff"
+                android:background="@color/p_vio_1"
+                android:textSize="27sp"></TextView>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarSize="5dp"
+                android:scrollbarThumbVertical="@android:color/darker_gray"
+                android:scrollbars="vertical"
+                android:animateLayoutChanges="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="&lt; 스트레칭 방법 &gt;"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:background="@color/p_vio_1"
+                    android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke">
+                <TextView
+                    android:id="@+id/youtubeC_1"
+                    android:layout_width="360dp"
+                    android:layout_height="70dp"
+                    android:text="     운동전 스트레칭"
+                    android:gravity="center"
+                    android:textSize="32sp"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/youtubeC_1_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:paddingEnd="10dp"
+                    android:src="@drawable/down_x" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/youtube_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text=" 상체 스트레칭 "
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@color/p_vio_2"
+                    android:textStyle="bold"/>
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:videoId="Xs-oEIPQPI8"
+                    app:useWebUi="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/youtube_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text=" 하체 스트레칭 "
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@color/p_vio_2"
+                    android:textStyle="bold"/>
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:useWebUi="true"
+                    app:videoId="UBVPNC1FBgc" />
+                <TextView
+                android:id="@+id/youtube_intent_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="스트레칭 더 알아보기 →"
+                android:background="@color/p_vio_2"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_200"
+                android:gravity="center"/>
+            </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/p_vio_2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="&lt; 3대 운동 방법 &gt;"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:background="@color/p_vio_1"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/stroke">
+                    <TextView
+                        android:id="@+id/youtubeC_2"
+                        android:layout_width="360dp"
+                        android:layout_height="70dp"
+                        android:text="     벤치/ 데드/ 스쿼트"
+                        android:gravity="center"
+                        android:textSize="32sp"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/youtubeC_2_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/down_x"
+                        android:paddingEnd="10dp"/>
+
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/youtube2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text=" 1. 벤치 프레스 "
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@color/p_vio_2"
+                    android:textStyle="bold"/>
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:useWebUi="true"
+                    app:videoId="0DsXTSHo3lU" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text=" 2. 데드 리프트 "
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@color/p_vio_2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:useWebUi="true"
+                    app:videoId="EBjYQeeBI-0" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text=" 3. 스쿼트 "
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@color/p_vio_2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:useWebUi="true"
+                    app:videoId="Fk9j6pQ6ej8" />
+                <TextView
+                    android:id="@+id/youtube_intent_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="3대 운동 더 알아보기 →"
+                    android:background="@color/p_vio_2"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_200"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="&lt; 부위별 운동 방법 &gt;"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:background="@color/p_vio_1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/stroke">
+                    <TextView
+                        android:id="@+id/youtubeC3_0"
+                        android:layout_width="360dp"
+                        android:layout_height="70dp"
+                        android:text="         어깨 운동 "
+                        android:gravity="center"
+                        android:textSize="32sp"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/youtubeC3_0_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/down_x"
+                        android:paddingEnd="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/youtube3_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 1. 사이드 레터럴 레이즈 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="iNgwwI3WBTo" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 2. 밀리터리 프레스 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="JyAhfMb3FIw" />
+                    <TextView
+                        android:id="@+id/youtube_intent_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="어깨운동 더 알아보기 →"
+                        android:background="@color/p_vio_2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_200"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/stroke">
+                    <TextView
+                        android:id="@+id/youtubeC3_1"
+                        android:layout_width="360dp"
+                        android:layout_height="70dp"
+                        android:text="         가슴 운동 "
+                        android:gravity="center"
+                        android:textSize="32sp"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/youtubeC3_1_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/down_x"
+                        android:paddingEnd="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/youtube3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 1. 인클라인 벤치 프레스 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="4HvI_mFhzVQ" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 2. 덤벨 프레스 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="xTQL6jvVMNA" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 3. 덤벨 플라이 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="fkIAiiz4Aq8" />
+                    <TextView
+                        android:id="@+id/youtube_intent_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="가슴운동 더 알아보기 → "
+                        android:background="@color/p_vio_2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_200"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/stroke">
+                    <TextView
+                        android:id="@+id/youtubeC3_2"
+                        android:layout_width="360dp"
+                        android:layout_height="70dp"
+                        android:text="        등 운동 "
+                        android:gravity="center"
+                        android:textSize="32sp"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/youtubeC3_2_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/down_x"
+                        android:paddingEnd="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/youtube3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 1. 바벨로우 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="EEqGCoTuYfQ"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 2. 랫풀다운 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="2K2WCGstHOY" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 3. 풀업 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="9lsqux_WcBo" />
+                    <TextView
+                        android:id="@+id/youtube_intent_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="등 운동 더 알아보기 →"
+                        android:background="@color/p_vio_2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_200"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/p_vio_2"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/stroke">
+                    <TextView
+                        android:id="@+id/youtubeC3_3"
+                        android:layout_width="360dp"
+                        android:layout_height="70dp"
+                        android:text="         복근 운동 "
+                        android:gravity="center"
+                        android:textSize="32sp"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/youtubeC3_3_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/down_x"
+                        android:paddingEnd="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/youtube3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="1. 크런치 / 레그 레이즈 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="YihuF8jxvXw"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="2. 행잉 레그 레이즈 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="tNFciUXMy1s"/>
+                    <TextView
+                        android:id="@+id/youtube_intent_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="복근 운동 더 알아보기 →"
+                        android:background="@color/p_vio_2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_200"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/stroke">
+                    <TextView
+                        android:id="@+id/youtubeC3_4"
+                        android:layout_width="360dp"
+                        android:layout_height="70dp"
+                        android:text="        팔 운동 "
+                        android:gravity="center"
+                        android:textSize="32sp"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/youtubeC3_4_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/down_x"
+                        android:paddingEnd="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/youtube3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="1. 덤벨컬(이두) "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="cOver4_h5Uw"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="2. 바벨컬(이두) "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="Dlg0W_5mq98"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="3. 라잉 트라이셉 익스텐션(삼두) "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="ogyGQxuxxn4"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="4. 프레스 다운(삼두) "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="ObEtLS9heOo"/>
+                    <TextView
+                        android:id="@+id/youtube_intent_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="팔 운동 더 알아보기 →"
+                        android:background="@color/p_vio_2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_200"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/p_vio_2"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/stroke">
+                    <TextView
+                        android:id="@+id/youtubeC3_5"
+                        android:layout_width="360dp"
+                        android:layout_height="70dp"
+                        android:text="         하체 운동 "
+                        android:gravity="center"
+                        android:textSize="32sp"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/youtubeC3_5_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/down_x"
+                        android:paddingEnd="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/youtube3_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="1. 레그컬 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="9w8d_EL-7e4"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="2. 레그 익스텐션 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="CVUd2FLP8JI"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="3. 레그 프레스 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="EV0F_3S7Sks"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="4. 런지 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="oPkwl7cFlyk"/>
+                    <TextView
+                        android:id="@+id/youtube_intent_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="하체 운동 더 알아보기 →"
+                        android:background="@color/p_vio_2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_200"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/stroke">
+                    <TextView
+                        android:id="@+id/youtubeC3_6"
+                        android:layout_width="360dp"
+                        android:layout_height="70dp"
+                        android:text="         종아리 운동 "
+                        android:gravity="center"
+                        android:textSize="32sp"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/youtubeC3_6_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/down_x"
+                        android:paddingEnd="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/youtube3_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 카프 레이즈 "
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:background="@color/p_vio_2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:useWebUi="true"
+                        app:videoId="fLv-r08OG7A"/>
+                    <TextView
+                        android:id="@+id/youtube_intent_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="종아리 운동 더 알아보기 →"
+                        android:background="@color/p_vio_2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_200"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <include
+        layout="@layout/activity_dra"></include>
+</androidx.drawerlayout.widget.DrawerLayout>

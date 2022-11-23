@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/re_list"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:src="@drawable/menu"
+                android:paddingTop="5dp"
+                android:background="@color/p_vio_1"
+                android:scaleType="center"></ImageButton>
+
+            <TextView
+                android:id="@+id/polkmn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:text="  문의 사항"
+                android:textColor="#ffffff"
+                android:background="@color/p_vio_1"
+                android:textSize="27sp"></TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:text="개발자에게 문의사항이나 건의사항이 있으시다면 0000000@naver.com으로 연락 주시면 감사하겠습니다.                                                            "
+            android:textSize="20sp"
+            android:textColor="@color/black"></TextView>
+
+        <Button
+            android:id="@+id/le_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:text="문의전화"
+            app:backgroundTint="@color/p_vio_2" />
+
+
+    </LinearLayout>
+    <include
+        layout="@layout/activity_dra"></include>
+</androidx.drawerlayout.widget.DrawerLayout>
